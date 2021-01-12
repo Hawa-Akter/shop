@@ -1,0 +1,15 @@
+{% extends "shop/base.html" %}
+{% load static %}
+
+{% block title %}
+Category
+{% endblock %}
+
+{% block content %}
+<ul>
+    {% for c in categories %}
+    <li>{{c.name}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

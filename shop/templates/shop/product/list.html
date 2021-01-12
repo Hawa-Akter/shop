@@ -1,0 +1,20 @@
+
+djdsjsdffdsdfs
+
+
+{% block content %}
+
+
+     <div class="row">
+         {%for product in products %}
+         <div class="col-sm-4">
+
+         <img src="{{ product.image.url }} alt={{product.name}}>
+
+         <a>{{ product.name }}dfg</a><br>
+         ${{ product.price }}555
+         </div>
+          {% endfor %}
+     </div>
+
+{% endblock %}
